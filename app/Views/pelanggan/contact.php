@@ -6,8 +6,8 @@
         <div class="col mt-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                    <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kontak</li>
                 </ol>
             </nav>
         </div>
@@ -16,7 +16,7 @@
     <section class="py-5 text-center container">
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Contact Us</h1>
+                <h1 class="fw-light">Kontak Kami</h1>
                 <p class="lead text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel justo suscipit, tincidunt urna eu, laoreet enim. Duis eget rutrum est. Cras interdum arcu laoreet, suscipit arcu eu, eleifend nulla.
                 </p>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-5" data-aos="zoom-in">
-                <h2>Address</h2>
+                <h2>Alamat lengkap</h2>
                 <hr>
                 <address>
                     <strong>AMRBHTR Restaurant</strong>

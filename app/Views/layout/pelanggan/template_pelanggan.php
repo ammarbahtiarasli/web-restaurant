@@ -55,25 +55,25 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home
+                        <a class="nav-link" href="/">Beranda
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/menu">Menu</a>
+                        <a class="nav-link" href="/menu">Daftar Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pelanggan/about">About</a>
+                        <a class="nav-link" href="/pelanggan/about">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pelanggan/contact">Contact</a>
+                        <a class="nav-link" href="/pelanggan/contact">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/pelanggan/gallery">Gallery</a>
+                        <a class="nav-link" href="/pelanggan/gallery">Galeri</a>
                     </li>
                     <?php if (empty(logged_in())) { ?>
                         <li class="nav-item text-nowrap">
-                            <a class="btn btn-secondary login-button" href="/login"><i class='bx bxs-door-open'></i> Log In</a>
+                            <a class="btn btn-secondary login-button" href="/login"><i class='bx bxs-door-open'></i> Masuk</a>
                         </li>
                     <?php } else { ?>
                         <div class="dropdown nav-item">
@@ -81,7 +81,7 @@
                                 <i class="bx bxs-user"></i> <?= user()->username; ?>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="/pelanggan/profile"><i class='bx bxs-user-detail'></i> PROFILE</a></li>
+                                <li><a class="dropdown-item" href="/pelanggan/profile"><i class='bx bxs-user-detail'></i> PROFIL</a></li>
                                 <div class="dropdown-divider"></div>
                                 <?php if (in_groups('user')) : ?>
                                     <li><a class="dropdown-item" href="/menu/cart"><i class='bx bxs-basket'></i> KERANJANG SAYA</a></li>
@@ -95,7 +95,7 @@
                                     <li><a class="dropdown-item" href="#"><i class='bx bxs-book'></i> HISTORI PESANAN</a></li>
                                     <div class="dropdown-divider"></div>
                                 <?php endif; ?>
-                                <li><a class="dropdown-item" href="/logout" onclick="return confirm('yakin akan keluar?')"><i class='bx bxs-door-open'></i> LOG OUT</a></li>
+                                <li><a class="dropdown-item" href="/logout" onclick="return confirm('yakin akan keluar?')"><i class='bx bxs-door-open'></i> KELUAR</a></li>
                             </ul>
                         </div>
                     <?php  } ?>
@@ -121,7 +121,7 @@
                 <a href="https://www.instagram.com/ammarbahtiarasli/" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
             <div class="copyright">
-                &copy; Copyright 2021 <strong><span>AMRBHTR</span></strong>. All Rights Reserved
+                &copy; Copyright 2021 <strong><span>AMRBHTR</span></strong>. Hak Cipta Dilindungi
             </div>
         </div>
     </footer><!-- End Footer -->

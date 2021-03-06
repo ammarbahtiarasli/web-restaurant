@@ -7,8 +7,8 @@
             <form action="/menu/getPesanan" method="POST">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Profile User</li>
+                        <li class="breadcrumb-item"><a href="/">Beranda</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profil Pengguna</li>
                     </ol>
                 </nav>
         </div>
@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-3" data-aos="fade-right">
-            <h2 class="my-4">Profile User</h2>
+            <h2 class="my-4">Profil Pengguna</h2>
             <hr>
             <!-- <div class="list-group shadow-sm">
                 <a href="#" class="list-group-item">Makanan</a>

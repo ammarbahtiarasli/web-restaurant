@@ -206,7 +206,7 @@ body {
   color: #fff;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
+  margin-right: 8px;
   text-align: center;
   width: 36px;
   height: 36px;
@@ -231,23 +231,22 @@ body {
   font-family: "Permanent Marker", cursive;
 }
 
-.animasi-text {
-  font-size: 29px;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: typing 5s steps(70, end);
-  animation: animasi-ketik 5s steps(70, end);
+.dropdown-menu .sub-menu {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  margin-top: -1px;
 }
 
-@keyframes animasi-ketik {
-  from {
-    width: 0;
-  }
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
 }
 
-@-webkit-keyframes animasi-ketik {
-  from {
-    width: 0;
-  }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.row.featurette {
+  padding-top: 3em;
 }

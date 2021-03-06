@@ -7,7 +7,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                    <li class="breadcrumb-item active" aria-current="page">Galeri</li>
                 </ol>
             </nav>
 
@@ -53,7 +53,7 @@
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Album Gallery</h1>
+                        <h1 class="fw-light">Galeri Album</h1>
                         <p class="lead text-muted">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel justo suscipit, tincidunt urna eu, laoreet enim. Duis eget rutrum est. Cras interdum arcu laoreet, suscipit arcu eu, eleifend nulla.
                         </p>

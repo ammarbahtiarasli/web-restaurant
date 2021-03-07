@@ -62,7 +62,7 @@
             <?php if (empty(logged_in())) { ?>
                 Silahkan Login terlebih dahulu
             <?php } else { ?>
-                <marquee class="text-white m-0">Hai <?= user()->username; ?>, Selamat datang di website AMRBHTR RESTAURANT -
+                <marquee class="text-white m-0">Hai <?= user()->username; ?>, Selamat datang di website AMRBHTR RESTAURANT - Makananmu adalah akun bankmu. Pilihan makanan yang baik adalah investasi yang baik. -
                     <?= date('d M Y'); ?>
                 </marquee>
             <?php  } ?>

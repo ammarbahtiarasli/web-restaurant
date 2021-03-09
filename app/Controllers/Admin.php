@@ -289,15 +289,6 @@ class Admin extends BaseController
 		return view('Admin/pesanan', $data);
 	}
 
-	// public function detail_pesanan()
-	// {
-	// 	$data = [
-	// 		'title' => 'Detail Pesanan - AMRBHTR RESTAURANT',
-	// 		'pesanan' => 'y'
-	// 	];
-	// 	return view('Admin/detail_pesanan', $data);
-	// }
-
 	public function detail_pesanan($id_order)
 	{
 		$data['pesanan'] = $this->PesananModel->ambil_id_pesanan($id_order);
@@ -322,6 +313,11 @@ class Admin extends BaseController
 			'pager' => $this->TransaksiModel->pager,
 		];
 		return view('Admin/transaksi', $data);
+	}
+
+	public function getTransaksi()
+	{
+		//ambil id menu simpan ke daftar transaksi
 	}
 
 	public function laporan()

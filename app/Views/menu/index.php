@@ -38,6 +38,9 @@
                 $jml_item = $jml_item + $value['qty'];
             }
             ?>
+            <?php if (in_groups('admin')) : ?>
+                <a class="btn btn-info btn-block btn-lg custom-button" href="/menu/cart">Keranjang saya <i class='bx bxs-basket'></i><span class="badge bg-default"><?= $jml_item ?></span></a>
+            <?php endif; ?>
             <?php if (in_groups('user')) : ?>
                 <a class="btn btn-info btn-block btn-lg custom-button" href="/menu/cart">Keranjang saya <i class='bx bxs-basket'></i><span class="badge bg-default"><?= $jml_item ?></span></a>
             <?php endif; ?>
@@ -109,6 +112,9 @@
                         <h4 class="card-text"><?= "Rp. " . number_format($menu['harga']); ?></h4>
                     </div>
                     <div class="card-footer">
+                        <?php if (in_groups('admin')) : ?>
+                            <button type="submit" class="btn btn-info custom-button"><i class='bx bxs-cart'></i> Pesan</button>
+                        <?php endif; ?>
                         <?php if (in_groups('user')) : ?>
                             <button type="submit" class="btn btn-info custom-button"><i class='bx bxs-cart'></i> Pesan</button>
                         <?php endif; ?>

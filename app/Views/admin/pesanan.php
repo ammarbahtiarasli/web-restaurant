@@ -54,6 +54,7 @@
                                 <td><?= $pesanan['created_at']; ?></td>
                                 <td>
                                     <a class="btn btn-outline-primary" href="/admin/detail_pesanan/<?= $pesanan['id_order']; ?>">Detail</a>
+                                    <a class="btn btn-success" href="#">Selesai</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

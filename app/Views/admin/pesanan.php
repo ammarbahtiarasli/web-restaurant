@@ -54,7 +54,10 @@
                                 <td><?= $pesanan['created_at']; ?></td>
                                 <td>
                                     <a class="btn btn-outline-primary" href="/admin/detail_pesanan/<?= $pesanan['id_order']; ?>">Detail</a>
-                                    <a class="btn btn-success" href="#">Selesai</a>
+                                    <form action="/admin/getTransaksi/<?= $pesanan['id_order']; ?>" method="POST">
+                                        <?= csrf_field(); ?>
+                                        <button type="submit" class="btn btn-success d-inline">Selesai</button>
+                                    </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

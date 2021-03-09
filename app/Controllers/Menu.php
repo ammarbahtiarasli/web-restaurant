@@ -100,7 +100,6 @@ class Menu extends BaseController
                 'id_order' => $id_order,
                 'qty' => $value['qty'],
                 'nama_menu' => $value['name'],
-                'total' => $cart->total()
             ]);
         }
 

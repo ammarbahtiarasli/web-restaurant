@@ -47,6 +47,9 @@
             <?php if (in_groups('waiter')) : ?>
                 <a class="btn btn-info btn-block btn-lg custom-button" href="/menu/cart">Keranjang saya <i class='bx bxs-basket'></i><span class="badge bg-default"><?= $jml_item ?></span></a>
             <?php endif; ?>
+            <?php if (in_groups('admin')) : ?>
+                <a class="btn btn-outline-warning btn-block btn-lg" href="#">Histori Pesanan</a>
+            <?php endif; ?>
             <?php if (in_groups('user')) : ?>
                 <a class="btn btn-outline-warning btn-block btn-lg" href="#">Histori Pesanan</a>
             <?php endif; ?>
@@ -66,7 +69,7 @@
                 Silahkan Login terlebih dahulu
             <?php } else { ?>
                 <marquee class="text-white m-0">Hai <?= user()->username; ?>, Selamat datang di website AMRBHTR RESTAURANT - Makananmu adalah akun bankmu. Pilihan makanan yang baik adalah investasi yang baik. -
-                    <?= date('d M Y'); ?>
+                    <?= date(' H:i:s , d M Y'); ?>
                 </marquee>
             <?php  } ?>
 

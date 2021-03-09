@@ -315,9 +315,8 @@ class Admin extends BaseController
 		return view('Admin/transaksi', $data);
 	}
 
-	public function getTransaksi()
+	public function getTransaksi($id_order)
 	{
-		//ambil id menu simpan ke daftar transaksi
 	}
 
 	public function laporan()

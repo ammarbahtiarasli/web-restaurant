@@ -9,7 +9,7 @@ class DetailPesananModel extends Model
     protected $table      = 'detail_pesanan';
     protected $primaryKey = 'id_detail_order';
     protected $timestamp = true;
-    protected $allowedFields = ['id_detail_order', 'id_order', 'nama_menu', 'qty', 'total'];
+    protected $allowedFields = ['id_detail_order', 'id_order', 'nama_menu', 'qty'];
 
     public function getDetailPesanan($detailpesanan = false)
     {

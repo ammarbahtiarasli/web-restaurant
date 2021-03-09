@@ -83,6 +83,12 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><a class="dropdown-item" href="/pelanggan/profile"><i class='bx bxs-user-detail'></i> PROFIL</a></li>
                                 <div class="dropdown-divider"></div>
+                                <?php if (in_groups('admin')) : ?>
+                                    <li><a class="dropdown-item" href="/menu/cart"><i class='bx bxs-basket'></i> KERANJANG SAYA</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bxs-book'></i> HISTORI PESANAN</a></li>
+                                    <div class="dropdown-divider"></div>
+                                <?php endif; ?>
                                 <?php if (in_groups('user')) : ?>
                                     <li><a class="dropdown-item" href="/menu/cart"><i class='bx bxs-basket'></i> KERANJANG SAYA</a></li>
                                     <div class="dropdown-divider"></div>

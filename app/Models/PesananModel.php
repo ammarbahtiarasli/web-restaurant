@@ -25,13 +25,14 @@ class PesananModel extends Model
         return $this->table('pesanan')->like('nama_menu', $keyword)->orLike('id_order', $keyword);
     }
 
-    public function ambil_id_pesanan($id_order)
+    public function get_pesanan_detail($id_pesanan = null)
     {
-        $result = $this->PesananModel->where('id_order', $id_order)->limit(1)->get('pesanan');
-        if ($result->num_rows() > 0) {
-            return $result->row();
-        } else {
-            return false;
+        $this->db->from('pesanan');
+        $this->db->join('detailpesanan', 'pesanan.id_order = detailpesanan.id_order');
+        if ($id_pesanan != null) {
+            $this->db->where('pesanan.id_pesanan', $id_pesanan);
         }
+        $result = $this->db->get();
+        return $result->result();
     }
 }

@@ -25,13 +25,13 @@ class DetailPesananModel extends Model
         return $this->table('detailpesanan')->like('nama_menu', $keyword)->orLike('id_order', $keyword);
     }
 
-    public function ambil_id_detailpesanan($id_order)
-    {
-        $result = $this->DetailPesananModel->where('id_order', $id_order)->get('detailpesanan');
-        if ($result->num_rows() > 0) {
-            return $result->result();
-        } else {
-            return false;
-        }
-    }
+    // public function ambil_id_detailpesanan($id_order)
+    // {
+    //     $result = $this->DetailPesananModel->where('id_order', $id_order)->get('detailpesanan');
+    //     if ($result->num_rows() > 0) {
+    //         return $result->result();
+    //     } else {
+    //         return false;
+    //     }
+    // }
 }

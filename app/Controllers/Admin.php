@@ -291,8 +291,7 @@ class Admin extends BaseController
 
 	public function detail_pesanan($id_order)
 	{
-		$data['pesanan'] = $this->PesananModel->ambil_id_pesanan($id_order);
-		$data['detailpesanan'] = $this->DetailPesananModel->ambil_id_detailpesanan($id_order);
+		$data['pesanan'] = $this->PesananModel->get_pesanan_detail($id_order)->result();
 		return view('admin/detail_pesanan', $data);
 	}
 
@@ -317,6 +316,25 @@ class Admin extends BaseController
 
 	public function getTransaksi($id_order)
 	{
+		$this->TransaksiModel->save([
+			'id_order' => $this->request->getVar('id_order'),
+			'nama_user' => $this->request->getVar('nama_user'),
+			'total_bayar' => 1,
+		]);
+
+		$id_order = $this->PesananModel->find($id_order);
+
+		$this->PesananModel->delete($id_order);
+
+		$id_order = $this->DetailPesananModel->find($id_order);
+
+		$this->DetailPesananModel->delete($id_order);
+
+
+
+		session()->setFlashdata('pesan', 'Pesanan selesai, lanjutkan pembayaran !');
+
+		return redirect()->to('/admin/transaksi');
 	}
 
 	public function laporan()

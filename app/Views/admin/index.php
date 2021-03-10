@@ -114,7 +114,7 @@
                                         <tr>
                                             <th scope="row"><?= $transaksi['id_transaksi']; ?></th>
                                             <td><?= $transaksi['id_order']; ?></td>
-                                            <td><?= $transaksi['id_user']; ?></td>
+                                            <td><?= $transaksi['nama_user']; ?></td>
                                             <td>
                                                 <?php if (in_groups('admin')) : ?>
                                                     <a class="btn btn-outline-success" href="/admin/transaksi">Detail</a>

@@ -70,7 +70,6 @@
                     <div class="card shadow">
                         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="/images/cafe.jpg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
                     </div>
-
                 </div>
             </div>
 

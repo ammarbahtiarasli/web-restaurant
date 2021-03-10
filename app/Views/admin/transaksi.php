@@ -10,6 +10,11 @@
                     <li class="breadcrumb-item active" aria-current="page">Transaksi</li>
                 </ol>
             </nav>
+            <?php if (session()->getFlashdata('pesan')) : ?>
+                <div class="alert alert-success" role="alert">
+                    <?= session()->getFlashdata('pesan'); ?>
+                </div>
+            <?php endif; ?>
             <h2>Daftar Transaksi</h2>
             <div class="dropdown-divider"></div>
             <div class="row">
@@ -24,12 +29,14 @@
                                         <th scope="col">Id order</th>
                                         <th scope="col">Total Bayar</th>
                                     </thead>
-                                    <tbody>
-                                        <td>tes</td>
-                                        <td>tes</td>
-                                        <td>tes</td>
-                                        <td>tes</td>
-                                    </tbody>
+                                    <?php foreach ($transaksi as $transaksi) : ?>
+                                        <tbody>
+                                            <td><?= $transaksi['id_transaksi']; ?></td>
+                                            <td><?= $transaksi['nama_user']; ?></td>
+                                            <td><?= $transaksi['id_order']; ?></td>
+                                            <td><?= $transaksi['total_bayar']; ?></td>
+                                        </tbody>
+                                    <?php endforeach; ?>
                                 </table>
                             </div>
                         </div>
@@ -39,7 +46,7 @@
                     <div class="card">
                         <div class="card-body">
                             <label for="nama lengkap" class="form-label">Total :</label>
-                            <h3>100.000</h3>
+                            <h3>150.000</h3>
                             <label for="nama lengkap" class="form-label">Kembali :</label>
                             <h3>0</h3>
                             <hr>

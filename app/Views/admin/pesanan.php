@@ -53,10 +53,12 @@
                                 <td><?= $pesanan['no_meja']; ?></td>
                                 <td><?= $pesanan['created_at']; ?></td>
                                 <td>
-                                    <a class="btn btn-outline-primary" href="/admin/detail_pesanan/<?= $pesanan['id_order']; ?>">Detail</a>
+                                    <a class="btn btn-outline-primary float-left mr-2" href="/admin/detail_pesanan/<?= $pesanan['id_order']; ?>">Detail</a>
                                     <form action="/admin/getTransaksi/<?= $pesanan['id_order']; ?>" method="POST">
                                         <?= csrf_field(); ?>
-                                        <button type="submit" class="btn btn-success d-inline">Selesai</button>
+                                        <input type="hidden" name="id_order" id="id_order" value="<?= $pesanan['id_order']; ?>">
+                                        <input type="hidden" name="nama_user" id="nama_user" value="<?= $pesanan['nama_user']; ?>">
+                                        <button type="submit" class="btn btn-success">Selesai</button>
                                     </form>
                                 </td>
                             </tr>
